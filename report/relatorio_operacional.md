@@ -75,7 +75,7 @@ O script principal lê o arquivo `data/telemetry_samples.csv` com `pandas`, apli
 - `src/ai_analysis.py`: prompt e classificação assistida.
 - `src/visualization.py`: leitura tabular com `pandas` e geração do dashboard gráfico.
 - `src/main.py`: leitura dos dados e impressão do resultado final.
-- `tests/`: suíte automatizada com 7 testes.
+- `tests/`: suíte automatizada com 8 testes.
 - `scripts/create_execution_assets.py`: geração dos logs e dos prints.
 - `scripts/generate_report_pdf.py`: conversão do relatório Markdown para PDF com imagens.
 
@@ -84,7 +84,9 @@ O script principal lê o arquivo `data/telemetry_samples.csv` com `pandas`, apli
 - A execução final processa 25 cenários.
 - 9 cenários foram classificados como `PRONTO PARA DECOLAR`.
 - 16 cenários foram classificados como `DECOLAGEM ABORTADA`.
-- Os cenários de referência seguem consistentes:
+
+Os cenários de referência seguem consistentes:
+
 - AURORA-01: `PRONTO PARA DECOLAR`
 - AURORA-02: `DECOLAGEM ABORTADA`
 - AURORA-03: `DECOLAGEM ABORTADA`
@@ -105,7 +107,10 @@ def load_telemetry(file_path):
 def evaluate_telemetry(record):
     checks = []
     anomalies = []
-    ...
+    internal_ok = 18.0 <= record["internal_temp_c"] <= 35.0
+    checks.append({"passed": internal_ok, "name": "Temperatura interna"})
+    if not internal_ok:
+        anomalies.append("Temperatura interna fora da faixa segura.")
     ready = all(item["passed"] for item in checks)
     decision = "PRONTO PARA DECOLAR" if ready else "DECOLAGEM ABORTADA"
     return {
@@ -220,7 +225,7 @@ Os prints abaixo foram gerados após a execução real do projeto com a base amp
 
 ### 8.2 Resultado da suíte de testes com pytest
 
-![Resultado da suíte de testes automatizados com 7 casos aprovados](../assets/prints/test_output.png)
+![Resultado da suíte de testes automatizados com 8 casos aprovados](../assets/prints/test_output.png)
 
 ### 8.3 Dashboard de telemetria gerado com pandas e matplotlib
 
@@ -238,4 +243,4 @@ Os prints abaixo foram gerados após a execução real do projeto com a base amp
 
 ## 9. Conclusão
 
-O projeto integra os conhecimentos introdutórios do primeiro semestre ao transformar dados de telemetria em decisões objetivas. A base ampliada para 25 cenários, a suíte automatizada com 7 testes, os cálculos energéticos e a reflexão crítica mostram como fundamentos de computação, lógica, IA e sustentabilidade podem ser combinados em uma atividade aplicada. Com isso, a entrega final passa a reunir código executável, validação automatizada, evidências visuais e documentação em PDF no formato pedido pela atividade.
+O projeto integra os conhecimentos introdutórios do primeiro semestre ao transformar dados de telemetria em decisões objetivas. A base ampliada para 25 cenários, a suíte automatizada com 8 testes, os cálculos energéticos e a reflexão crítica mostram como fundamentos de computação, lógica, IA e sustentabilidade podem ser combinados em uma atividade aplicada. Com isso, a entrega final passa a reunir código executável, validação automatizada, evidências visuais e documentação em PDF no formato pedido pela atividade.
