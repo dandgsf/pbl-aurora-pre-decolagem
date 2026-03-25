@@ -1,0 +1,7 @@
+ipykernel
+jupyterlab
+matplotlib
+pandas
+pillow
+pytest
+reportlab

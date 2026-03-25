@@ -1,0 +1,682 @@
+RELATÓRIO OPERACIONAL DE PRÉ-DECOLAGEM - MISSÃO AURORA
+
+========================================================================
+CENÁRIO: AURORA-01
+------------------------------------------------------------------------
+Decisão final: PRONTO PARA DECOLAR
+Verificações:
+  - [OK] Temperatura interna: 24.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -45.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 92.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 38.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 1104.00 kWh
+  - Energia utilizável: 1015.68 kWh
+  - Energia restante após a decolagem: 755.68 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.91
+Análise assistida por IA:
+  - Classificação: Baixo
+  - Anomalias:
+    * Nenhuma anomalia crítica detectada na telemetria inicial.
+  - Sugestões de risco:
+    * Prosseguir com a checagem regressiva e manter monitoramento contínuo.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-02
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [OK] Temperatura interna: 29.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -30.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [ALERTA] Nível de energia: 48.0% abaixo do mínimo de 70%
+  - [OK] Pressão dos tanques: 37.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 576.00 kWh
+  - Energia utilizável: 506.88 kWh
+  - Energia restante após a decolagem: 186.88 kWh
+  - Ciclos equivalentes de decolagem suportados: 1.58
+Análise assistida por IA:
+  - Classificação: Alto
+  - Anomalias:
+    * Nível de energia abaixo do mínimo operacional.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Reforçar a carga das baterias antes de uma nova tentativa.
+    * Reavaliar a margem energética para fases posteriores da missão.
+
+========================================================================
+CENÁRIO: AURORA-03
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [ALERTA] Temperatura interna: 41.0 C fora da faixa 18 a 35 C
+  - [OK] Temperatura externa: -18.0 C dentro da faixa -120 a 50 C
+  - [ALERTA] Integridade estrutural: Falha de integridade estrutural.
+  - [OK] Nível de energia: 88.0% dentro da faixa 70% a 100%
+  - [ALERTA] Pressão dos tanques: 44.0 bar fora da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [ALERTA] Módulo crítico - Comunicação: Comunicação: FAIL
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 1056.00 kWh
+  - Energia utilizável: 960.96 kWh
+  - Energia restante após a decolagem: 680.96 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.43
+Análise assistida por IA:
+  - Classificação: Crítico
+  - Anomalias:
+    * Temperatura interna fora da faixa segura.
+    * Integridade estrutural comprometida.
+    * Pressão dos tanques fora da faixa segura.
+    * Falha em módulo crítico: Comunicação.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Executar inspeção estrutural completa no casco e nos suportes.
+    * Restabelecer o módulo de comunicação antes da janela de lançamento.
+
+========================================================================
+CENÁRIO: AURORA-04
+------------------------------------------------------------------------
+Decisão final: PRONTO PARA DECOLAR
+Verificações:
+  - [OK] Temperatura interna: 18.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -95.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 70.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 30.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 840.00 kWh
+  - Energia utilizável: 756.00 kWh
+  - Energia restante após a decolagem: 506.00 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.02
+Análise assistida por IA:
+  - Classificação: Baixo
+  - Anomalias:
+    * Nenhuma anomalia crítica detectada na telemetria inicial.
+  - Sugestões de risco:
+    * Prosseguir com a checagem regressiva e manter monitoramento contínuo.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-05
+------------------------------------------------------------------------
+Decisão final: PRONTO PARA DECOLAR
+Verificações:
+  - [OK] Temperatura interna: 35.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: 10.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 75.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 40.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 900.00 kWh
+  - Energia utilizável: 837.00 kWh
+  - Energia restante após a decolagem: 582.00 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.28
+Análise assistida por IA:
+  - Classificação: Baixo
+  - Anomalias:
+    * Nenhuma anomalia crítica detectada na telemetria inicial.
+  - Sugestões de risco:
+    * Prosseguir com a checagem regressiva e manter monitoramento contínuo.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-06
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [OK] Temperatura interna: 22.0 C dentro da faixa 18 a 35 C
+  - [ALERTA] Temperatura externa: -130.0 C fora da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 82.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 36.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 984.00 kWh
+  - Energia utilizável: 895.44 kWh
+  - Energia restante após a decolagem: 625.44 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.32
+Análise assistida por IA:
+  - Classificação: Alto
+  - Anomalias:
+    * Temperatura externa fora da faixa segura.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-07
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [OK] Temperatura interna: 27.0 C dentro da faixa 18 a 35 C
+  - [ALERTA] Temperatura externa: 55.0 C fora da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 84.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 35.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 1008.00 kWh
+  - Energia utilizável: 927.36 kWh
+  - Energia restante após a decolagem: 667.36 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.57
+Análise assistida por IA:
+  - Classificação: Alto
+  - Anomalias:
+    * Temperatura externa fora da faixa segura.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-08
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [OK] Temperatura interna: 23.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -40.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 91.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 37.0 bar dentro da faixa 30 a 40 bar
+  - [ALERTA] Módulo crítico - Navegação: Navegação: FAIL
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 1092.00 kWh
+  - Energia utilizável: 1004.64 kWh
+  - Energia restante após a decolagem: 746.64 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.89
+Análise assistida por IA:
+  - Classificação: Crítico
+  - Anomalias:
+    * Falha em módulo crítico: Navegação.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-09
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [OK] Temperatura interna: 25.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -38.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 89.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 36.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [ALERTA] Módulo crítico - Propulsão: Propulsão: FAIL
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 1068.00 kWh
+  - Energia utilizável: 982.56 kWh
+  - Energia restante após a decolagem: 720.56 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.75
+Análise assistida por IA:
+  - Classificação: Crítico
+  - Anomalias:
+    * Falha em módulo crítico: Propulsão.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-10
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [OK] Temperatura interna: 24.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -42.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 90.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 37.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [ALERTA] Módulo crítico - Suporte de vida: Suporte de vida: FAIL
+Análise energética:
+  - Energia armazenada: 1080.00 kWh
+  - Energia utilizável: 993.60 kWh
+  - Energia restante após a decolagem: 734.60 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.84
+Análise assistida por IA:
+  - Classificação: Crítico
+  - Anomalias:
+    * Falha em módulo crítico: Suporte de vida.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-11
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [OK] Temperatura interna: 26.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -47.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 81.0% dentro da faixa 70% a 100%
+  - [ALERTA] Pressão dos tanques: 28.0 bar fora da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 972.00 kWh
+  - Energia utilizável: 884.52 kWh
+  - Energia restante após a decolagem: 619.52 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.34
+Análise assistida por IA:
+  - Classificação: Crítico
+  - Anomalias:
+    * Pressão dos tanques fora da faixa segura.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-12
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [OK] Temperatura interna: 28.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -20.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 83.0% dentro da faixa 70% a 100%
+  - [ALERTA] Pressão dos tanques: 41.0 bar fora da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 996.00 kWh
+  - Energia utilizável: 906.36 kWh
+  - Energia restante após a decolagem: 640.36 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.41
+Análise assistida por IA:
+  - Classificação: Crítico
+  - Anomalias:
+    * Pressão dos tanques fora da faixa segura.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-13
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [OK] Temperatura interna: 31.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -50.0 C dentro da faixa -120 a 50 C
+  - [ALERTA] Integridade estrutural: Falha de integridade estrutural.
+  - [OK] Nível de energia: 86.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 39.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 1032.00 kWh
+  - Energia utilizável: 949.44 kWh
+  - Energia restante após a decolagem: 681.44 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.54
+Análise assistida por IA:
+  - Classificação: Crítico
+  - Anomalias:
+    * Integridade estrutural comprometida.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Executar inspeção estrutural completa no casco e nos suportes.
+
+========================================================================
+CENÁRIO: AURORA-14
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [ALERTA] Temperatura interna: 15.0 C fora da faixa 18 a 35 C
+  - [OK] Temperatura externa: -60.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 88.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 36.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 1056.00 kWh
+  - Energia utilizável: 971.52 kWh
+  - Energia restante após a decolagem: 707.52 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.68
+Análise assistida por IA:
+  - Classificação: Crítico
+  - Anomalias:
+    * Temperatura interna fora da faixa segura.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-15
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [ALERTA] Temperatura interna: 36.0 C fora da faixa 18 a 35 C
+  - [OK] Temperatura externa: -15.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 87.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 38.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 1044.00 kWh
+  - Energia utilizável: 960.48 kWh
+  - Energia restante após a decolagem: 699.48 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.68
+Análise assistida por IA:
+  - Classificação: Crítico
+  - Anomalias:
+    * Temperatura interna fora da faixa segura.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-16
+------------------------------------------------------------------------
+Decisão final: PRONTO PARA DECOLAR
+Verificações:
+  - [OK] Temperatura interna: 21.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -25.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 100.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 34.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 1200.00 kWh
+  - Energia utilizável: 1128.00 kWh
+  - Energia restante após a decolagem: 848.00 kWh
+  - Ciclos equivalentes de decolagem suportados: 4.03
+Análise assistida por IA:
+  - Classificação: Baixo
+  - Anomalias:
+    * Nenhuma anomalia crítica detectada na telemetria inicial.
+  - Sugestões de risco:
+    * Prosseguir com a checagem regressiva e manter monitoramento contínuo.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-17
+------------------------------------------------------------------------
+Decisão final: PRONTO PARA DECOLAR
+Verificações:
+  - [OK] Temperatura interna: 32.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -12.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 73.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 33.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 876.00 kWh
+  - Energia utilizável: 814.68 kWh
+  - Energia restante após a decolagem: 574.68 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.39
+Análise assistida por IA:
+  - Classificação: Baixo
+  - Anomalias:
+    * Nenhuma anomalia crítica detectada na telemetria inicial.
+  - Sugestões de risco:
+    * Prosseguir com a checagem regressiva e manter monitoramento contínuo.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-18
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [OK] Temperatura interna: 30.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -28.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [ALERTA] Nível de energia: 69.0% abaixo do mínimo de 70%
+  - [OK] Pressão dos tanques: 34.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 828.00 kWh
+  - Energia utilizável: 770.04 kWh
+  - Energia restante após a decolagem: 532.04 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.24
+Análise assistida por IA:
+  - Classificação: Alto
+  - Anomalias:
+    * Nível de energia abaixo do mínimo operacional.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Reforçar a carga das baterias antes de uma nova tentativa.
+
+========================================================================
+CENÁRIO: AURORA-19
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [OK] Temperatura interna: 22.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -32.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 79.0% dentro da faixa 70% a 100%
+  - [ALERTA] Pressão dos tanques: 29.0 bar fora da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [ALERTA] Módulo crítico - Comunicação: Comunicação: FAIL
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 948.00 kWh
+  - Energia utilizável: 853.20 kWh
+  - Energia restante após a decolagem: 608.20 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.48
+Análise assistida por IA:
+  - Classificação: Crítico
+  - Anomalias:
+    * Pressão dos tanques fora da faixa segura.
+    * Falha em módulo crítico: Comunicação.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Restabelecer o módulo de comunicação antes da janela de lançamento.
+
+========================================================================
+CENÁRIO: AURORA-20
+------------------------------------------------------------------------
+Decisão final: PRONTO PARA DECOLAR
+Verificações:
+  - [OK] Temperatura interna: 33.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -44.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 85.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 31.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 1020.00 kWh
+  - Energia utilizável: 938.40 kWh
+  - Energia restante após a decolagem: 666.40 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.45
+Análise assistida por IA:
+  - Classificação: Baixo
+  - Anomalias:
+    * Nenhuma anomalia crítica detectada na telemetria inicial.
+  - Sugestões de risco:
+    * Prosseguir com a checagem regressiva e manter monitoramento contínuo.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-21
+------------------------------------------------------------------------
+Decisão final: PRONTO PARA DECOLAR
+Verificações:
+  - [OK] Temperatura interna: 19.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: 50.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 78.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 39.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 936.00 kWh
+  - Energia utilizável: 870.48 kWh
+  - Energia restante após a decolagem: 622.48 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.51
+Análise assistida por IA:
+  - Classificação: Baixo
+  - Anomalias:
+    * Nenhuma anomalia crítica detectada na telemetria inicial.
+  - Sugestões de risco:
+    * Prosseguir com a checagem regressiva e manter monitoramento contínuo.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-22
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [OK] Temperatura interna: 20.0 C dentro da faixa 18 a 35 C
+  - [ALERTA] Temperatura externa: -121.0 C fora da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 80.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 35.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 960.00 kWh
+  - Energia utilizável: 892.80 kWh
+  - Energia restante após a decolagem: 643.80 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.59
+Análise assistida por IA:
+  - Classificação: Alto
+  - Anomalias:
+    * Temperatura externa fora da faixa segura.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-23
+------------------------------------------------------------------------
+Decisão final: PRONTO PARA DECOLAR
+Verificações:
+  - [OK] Temperatura interna: 34.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -36.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 70.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 39.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 840.00 kWh
+  - Energia utilizável: 764.40 kWh
+  - Energia restante após a decolagem: 512.40 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.03
+Análise assistida por IA:
+  - Classificação: Baixo
+  - Anomalias:
+    * Nenhuma anomalia crítica detectada na telemetria inicial.
+  - Sugestões de risco:
+    * Prosseguir com a checagem regressiva e manter monitoramento contínuo.
+    * Registrar o cenário como referência de operação segura.
+
+========================================================================
+CENÁRIO: AURORA-24
+------------------------------------------------------------------------
+Decisão final: DECOLAGEM ABORTADA
+Verificações:
+  - [OK] Temperatura interna: 25.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -22.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 88.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 38.0 bar dentro da faixa 30 a 40 bar
+  - [ALERTA] Módulo crítico - Navegação: Navegação: FAIL
+  - [ALERTA] Módulo crítico - Comunicação: Comunicação: FAIL
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [ALERTA] Módulo crítico - Suporte de vida: Suporte de vida: FAIL
+Análise energética:
+  - Energia armazenada: 1056.00 kWh
+  - Energia utilizável: 971.52 kWh
+  - Energia restante após a decolagem: 697.52 kWh
+  - Ciclos equivalentes de decolagem suportados: 3.55
+Análise assistida por IA:
+  - Classificação: Crítico
+  - Anomalias:
+    * Falha em módulo crítico: Navegação, Comunicação, Suporte de vida.
+  - Sugestões de risco:
+    * Abortar a decolagem até que todas as falhas críticas sejam resolvidas.
+    * Restabelecer o módulo de comunicação antes da janela de lançamento.
+
+========================================================================
+CENÁRIO: AURORA-25
+------------------------------------------------------------------------
+Decisão final: PRONTO PARA DECOLAR
+Verificações:
+  - [OK] Temperatura interna: 29.0 C dentro da faixa 18 a 35 C
+  - [OK] Temperatura externa: -48.0 C dentro da faixa -120 a 50 C
+  - [OK] Integridade estrutural: Integridade estrutural confirmada.
+  - [OK] Nível de energia: 93.0% dentro da faixa 70% a 100%
+  - [OK] Pressão dos tanques: 37.0 bar dentro da faixa 30 a 40 bar
+  - [OK] Módulo crítico - Navegação: Navegação: OK
+  - [OK] Módulo crítico - Comunicação: Comunicação: OK
+  - [OK] Módulo crítico - Propulsão: Propulsão: OK
+  - [OK] Módulo crítico - Suporte de vida: Suporte de vida: OK
+Análise energética:
+  - Energia armazenada: 1116.00 kWh
+  - Energia utilizável: 1037.88 kWh
+  - Energia restante após a decolagem: 780.88 kWh
+  - Ciclos equivalentes de decolagem suportados: 4.04
+Análise assistida por IA:
+  - Classificação: Baixo
+  - Anomalias:
+    * Nenhuma anomalia crítica detectada na telemetria inicial.
+  - Sugestões de risco:
+    * Prosseguir com a checagem regressiva e manter monitoramento contínuo.
+    * Registrar o cenário como referência de operação segura.

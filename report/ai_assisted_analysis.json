@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-03-25T20:24:37.472933+00:00",
+  "model": "gpt-4.1-mini",
+  "analyses": [
+    {
+      "scenario_id": "AURORA-01",
+      "prompt": "Você é um assistente de missão espacial.\nAnalise os dados de telemetria abaixo e responda em português com:\n1. Classificação do cenário.\n2. Possíveis anomalias.\n3. Sugestões objetivas de risco.\n\nCenário: AURORA-01\nTemperatura interna: 24.0 C\nTemperatura externa: -45.0 C\nIntegridade estrutural: 1\nNível de energia: 92.0%\nPressão dos tanques: 38.0 bar\nMódulo navegação: OK\nMódulo comunicação: OK\nMódulo propulsão: OK\nMódulo suporte de vida: OK\nDecisão automática atual: PRONTO PARA DECOLAR\nEnergia utilizável: 1015.68 kWh\nEnergia restante após decolagem: 755.68 kWh\n\nResponda estritamente em JSON com estas chaves:\n- scenario_id: string\n- classification: string\n- anomalies: array de strings\n- risk_suggestions: array de strings\n- summary: string curta em portugues\n",
+      "local_decision": "PRONTO PARA DECOLAR",
+      "remaining_after_launch_kwh": 755.68,
+      "classification": "Normal",
+      "anomalies": [],
+      "risk_suggestions": [
+        "Monitorar pressão dos tanques para evitar quedas inesperadas.",
+        "Verificar continuamente a integridade estrutural durante a decolagem.",
+        "Garantir que os níveis de energia permaneçam acima do mínimo operacional."
+      ],
+      "summary": "Cenário estável e pronto para decolagem, sem anomalias detectadas."
+    },
+    {
+      "scenario_id": "AURORA-02",
+      "prompt": "Você é um assistente de missão espacial.\nAnalise os dados de telemetria abaixo e responda em português com:\n1. Classificação do cenário.\n2. Possíveis anomalias.\n3. Sugestões objetivas de risco.\n\nCenário: AURORA-02\nTemperatura interna: 29.0 C\nTemperatura externa: -30.0 C\nIntegridade estrutural: 1\nNível de energia: 48.0%\nPressão dos tanques: 37.0 bar\nMódulo navegação: OK\nMódulo comunicação: OK\nMódulo propulsão: OK\nMódulo suporte de vida: OK\nDecisão automática atual: DECOLAGEM ABORTADA\nEnergia utilizável: 506.88 kWh\nEnergia restante após decolagem: 186.88 kWh\n\nResponda estritamente em JSON com estas chaves:\n- scenario_id: string\n- classification: string\n- anomalies: array de strings\n- risk_suggestions: array de strings\n- summary: string curta em portugues\n",
+      "local_decision": "DECOLAGEM ABORTADA",
+      "remaining_after_launch_kwh": 186.88,
+      "classification": "Alerta",
+      "anomalies": [
+        "Nível de energia baixo para decolagem segura",
+        "Decisão automática de decolagem abortada"
+      ],
+      "risk_suggestions": [
+        "Rever o plano de energia para garantir carga suficiente antes da próxima tentativa",
+        "Monitorar integridade estrutural e pressão dos tanques para evitar falhas durante operação",
+        "Confirmar estabilidade térmica interna e externa para evitar danos aos sistemas"
+      ],
+      "summary": "Decolagem abortada devido a energia insuficiente, cenário requer revisão e monitoramento."
+    },
+    {
+      "scenario_id": "AURORA-03",
+      "prompt": "Você é um assistente de missão espacial.\nAnalise os dados de telemetria abaixo e responda em português com:\n1. Classificação do cenário.\n2. Possíveis anomalias.\n3. Sugestões objetivas de risco.\n\nCenário: AURORA-03\nTemperatura interna: 41.0 C\nTemperatura externa: -18.0 C\nIntegridade estrutural: 0\nNível de energia: 88.0%\nPressão dos tanques: 44.0 bar\nMódulo navegação: OK\nMódulo comunicação: FAIL\nMódulo propulsão: OK\nMódulo suporte de vida: OK\nDecisão automática atual: DECOLAGEM ABORTADA\nEnergia utilizável: 960.96 kWh\nEnergia restante após decolagem: 680.96 kWh\n\nResponda estritamente em JSON com estas chaves:\n- scenario_id: string\n- classification: string\n- anomalies: array de strings\n- risk_suggestions: array de strings\n- summary: string curta em portugues\n",
+      "local_decision": "DECOLAGEM ABORTADA",
+      "remaining_after_launch_kwh": 680.96,
+      "classification": "Crítico",
+      "anomalies": [
+        "Integridade estrutural em 0",
+        "Módulo comunicação com falha"
+      ],
+      "risk_suggestions": [
+        "Investigar e reparar falha no módulo de comunicação antes de qualquer operação",
+        "Avaliar danos estruturais e realizar reparos urgentes para garantir segurança",
+        "Manter decisão de decolagem abortada até resolução das anomalias",
+        "Monitorar temperaturas internas para evitar superaquecimento"
+      ],
+      "summary": "Missão em estado crítico devido à falha estrutural e comunicação, decolagem abortada."
+    }
+  ]
+}
