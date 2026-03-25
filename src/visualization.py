@@ -11,6 +11,16 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = PROJECT_ROOT / "data" / "telemetry_samples.csv"
 
 
+def format_scenario_labels(scenarios):
+    """Quebra o identificador do cenário em duas linhas para melhorar a leitura."""
+
+    labels = []
+    for scenario in scenarios:
+        prefix, _, suffix = str(scenario).partition("-")
+        labels.append(f"{prefix}\n{suffix}" if suffix else str(scenario))
+    return labels
+
+
 def load_telemetry_dataframe(file_path):
     """Carrega a telemetria em um DataFrame do pandas com tipos consistentes."""
 
@@ -52,22 +62,23 @@ def generate_telemetry_chart(output_file, file_path=DATA_FILE):
 
     dataframe = load_telemetry_dataframe(file_path)
     scenarios = dataframe["scenario_id"]
+    scenario_labels = format_scenario_labels(scenarios)
     positions = list(range(len(scenarios)))
 
-    figure, axes = plt.subplots(3, 1, figsize=(14, 12), constrained_layout=True)
+    figure, axes = plt.subplots(3, 1, figsize=(18, 15), constrained_layout=True)
 
     axes[0].bar(positions, dataframe["internal_temp_c"], color="#1f77b4")
     axes[0].axhline(18, color="#2ca02c", linestyle="--", linewidth=1)
     axes[0].axhline(35, color="#d62728", linestyle="--", linewidth=1)
     axes[0].set_title("Temperatura interna por cenário")
     axes[0].set_ylabel("°C")
-    axes[0].tick_params(axis="x", which="both", labelbottom=False)
+    axes[0].set_xlabel("Cenário")
 
     axes[1].bar(positions, dataframe["energy_level_pct"], color="#ff7f0e")
     axes[1].axhline(70, color="#d62728", linestyle="--", linewidth=1)
     axes[1].set_title("Nível de energia por cenário")
     axes[1].set_ylabel("%")
-    axes[1].tick_params(axis="x", which="both", labelbottom=False)
+    axes[1].set_xlabel("Cenário")
 
     axes[2].bar(positions, dataframe["tank_pressure_bar"], color="#17becf")
     axes[2].axhline(30, color="#2ca02c", linestyle="--", linewidth=1)
@@ -75,10 +86,11 @@ def generate_telemetry_chart(output_file, file_path=DATA_FILE):
     axes[2].set_title("Pressão dos tanques por cenário")
     axes[2].set_ylabel("bar")
     axes[2].set_xlabel("Cenário")
-    axes[2].set_xticks(positions)
-    axes[2].set_xticklabels(scenarios, rotation=45, ha="right", fontsize=8)
-
     for axis in axes:
+        axis.set_xlim(-0.6, len(positions) - 0.4)
+        axis.set_xticks(positions)
+        axis.set_xticklabels(scenario_labels, fontsize=8)
+        axis.tick_params(axis="x", labelbottom=True, pad=6)
         axis.margins(x=0.01)
         axis.grid(axis="y", alpha=0.15, linestyle=":")
 
